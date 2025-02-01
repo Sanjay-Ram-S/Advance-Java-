@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean class="map.Team" id="t1" p:id="1" p:name="chennai" p:color="yellow" p:state="tamilnadu" >
+		<property name="players">
+			<map>
+				<entry key="3" value="raina" />
+				<entry key="7" value="dhoni" />
+				<entry key="8" value="jadeja" />
+			</map>
+		</property>
+	</bean>
+</beans>
